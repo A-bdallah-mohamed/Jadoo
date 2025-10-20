@@ -445,14 +445,14 @@ border: 1px solid rgba(128, 128, 128, 0.356);
 }
 .subscribe{
     background-color: #f9f7fe;
-    height: 500px;
     border-radius: 150px 20px 20px 20px ;
     display: flex;
+    padding: 110px 0px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    gap: 50px;
+    gap: 80px;
 }
 .subscribe h1{
     padding: 0px 100px;
@@ -503,5 +503,23 @@ outline: none;
     background: linear-gradient(to top, #ff765e,#ff8e65);
         border-radius: 15px;
 color: white;
-font-weight: bold;
+font-weight: 400;
+}
+footer p{
+color: gray;
+margin: 0;
+font-weight: 600;
+}
+footer{
+    position: relative;
+}
+.decorefooter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.subscribedecore{
+    position: absolute;
+    bottom: -70px;
+    right: -50px;
 }

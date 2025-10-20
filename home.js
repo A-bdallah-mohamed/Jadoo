@@ -12,7 +12,6 @@ pagination.innerHTML = children.map((_, i) => `<div class="pagination-dot"></div
 function updateClasses() {
   children.forEach(c => c.className = "slide");
 
-  // calculate indices
   const prevIndex = (activeIndex - 1 + children.length) % children.length;
   const nextIndex = (activeIndex + 1) % children.length;
 
@@ -27,13 +26,11 @@ function updateClasses() {
 
 updateClasses();
 
-// next button
 nextBtn.addEventListener("click", () => {
   activeIndex = (activeIndex + 1) % children.length;
   updateClasses();
 });
 
-// prev button
 prevBtn.addEventListener("click", () => {
   activeIndex = (activeIndex - 1 + children.length) % children.length;
   updateClasses();
