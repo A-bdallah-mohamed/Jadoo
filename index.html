@@ -28,8 +28,8 @@
   <div>
 
 
-    <section class="mainsection ">
-      <div class="decortopright"></div>
+    <section class="mainsection scene" >
+      <div class="decortopright" data-depth="0.05"></div>
             <div class="decortopleft"></div>
 
       <div class="container">
@@ -41,16 +41,16 @@
           <div class="logocontainer center">
             <img src="./Assets/Logo.png" alt="">
           </div>
-          <ul>
+          <ul class="d-none d-lg-flex">
             <li>Desitnations</li>
             <li>Hotels</li>
             <li>Flihgts</li>
             <li>Booking</li>
             <li>Login</li>
-            <li>Sign up</li>
-            <li>EN</li>
+            <li class="borderedlistitem">Sign up</li>
+            <li class="d-flex align-items-center justify-content-center gap-2"><p class="m-0">EN</p><i class="bi bi-chevron-down"></i></li>
           </ul>
-
+<i class="bi bi-list d-block d-lg-none fs-1"></i>
 
         </header>
 
@@ -58,32 +58,50 @@
 
 
         <div class="row equal-height px-3">
-          <div class="col-6 textcontent">
-            <div>
-              <p class="smallheading">BEST DESTINATIONS AROUND THE WORLD</p>
-              <p class="heading">Travel, <span>enjoy</span><br />and live a new<br />and full life</p>
-              <p class="paragraph">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen
+          <div class="col-md-6 col-12 textcontent">
+            <div class="scene">
+              <div data-depth="0.7">
+              <p class="smallheading typing" id="smallheading">BEST DESTINATIONS AROUND THE WORLD</p>
+              </div>
+              <div data-depth="0.5">
+              <div class="heading" id="mainheading"><p class="typinghead">Travel, </p><span class="typinghead">enjoy</span><br /><p class="typinghead">and live a new</p><br /><p class="typinghead">and full life.</p></div>
+             </div>
+             <div data-depth="0.7">
+              <p class="paragraph" id="paragraph">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen
                 it engrossed listening. Park gate sell they west hard for the.</p>
-              <div class="buttonscontainer d-flex gap-5 fw-bold">
-                <button>Find out more</button>
-                <div class="playdemo gap-2 text-nowrap center text-muted ">
+                </div>
+              <div class="buttonscontainer d-flex gap-lg-5 gap-3 fw-bold scene" data-depth="1.5">
+                <div data-depth="0.9">
+                <button id="button1" >Find out more</button>
+                </div>
+<div data-depth="0.6">
+                <div class="playdemo gap-2 text-nowrap center text-muted " id="button2" >
                   <div class="demologocontainer"><img src="./Assets//Polygon 1.png" alt=""></div>Play Demo
                 </div>
+</div>
+
               </div>
             </div>
           </div>
 
-          <div class="col-6 position-relative center">
+          <div class="col-md-6 d-none d-md-flex position-relative center">
 
 
-            <div class="imgcontainer">
-              <img src="./Assets/Traveller 1.png" alt="">
-              <img src="./Assets/plane.png" alt="" class="plane1">
-              <img src="./Assets/plane.png" alt="" class="plane2">
-            </div>
+     <div class="imgcontainer center scene" id="sceneimages">
+      <div data-depth="0.5">
+  <img src="./Assets/Traveller 1.png" alt="" class="traveller" id="traveller" >
+</div>
+<div  data-depth="1.5">
+  <img src="./Assets/plane.png" alt="" id="plane1">
+
+</div>
+<div  data-depth="1.5">
+  <img src="./Assets/plane.png" alt="" id="plane2">
+</div>
+</div>
+
           </div>
         </div>
-
       </div>
 
 
@@ -91,11 +109,15 @@
 
     <section class="categoriessections padding100">
 
-      <div class="container center flex-column gap-4">
+      <div class="container center flex-column gap-4 scene" >
+        <div data-depth="1">
         <p class="fw-bold m-0 text-muted" style='font-weight: "Poppins","sans";' >CATEGORY</p>
+        </div>
+        <div data-depth="0.5">
         <h1 class="fw-bold heading" >We Offer Best Services</h1>
-        <div class="row w-100 center px-4"  >
-          <div class="col categorycontainer">
+        </div>
+        <div class="row w-100 center px-4 gap-2 scene" data-depth="0.2">
+          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1.5">
 
 
 <div class="category gap-3">
@@ -106,7 +128,7 @@
 
 
           </div>
-          <div class="col categorycontainer">
+          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1">
 
 
             
@@ -119,7 +141,7 @@
 
 
           </div>
-          <div class="col categorycontainer">
+          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1">
 
 
             
@@ -132,7 +154,7 @@
 
 
           </div>
-          <div class="col categorycontainer">
+          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1.5">
 
 
             
@@ -154,13 +176,17 @@
     <section class="topdestinations padding100">
 
 
-      <div class="container center flex-column gap-4 px-5">
+      <div class="container center flex-column gap-4 px-5 scene" >
+        <div data-depth="0.8">
         <p class="fw-bold m-0 text-muted" style='font-weight: "Poppins","sans";' >Top Selling</p>
+        </div>
+        <div data-depth="0.5">
         <h1 class="fw-bold heading" >Top Destinations</h1>
-<div class="row w-100 pt-5 center">
+        </div>
+<div class="row w-100 pt-5 center gap-2 scene" data-depth="0.5" >
 
   
-  <div class="col center px-2 px-lg-3">
+  <div class="col-md col-12 center px-2 px-lg-3" data-depth="0.8">
     <div class="destination">
       <div class="imgcontainer"><img src="./Assets/destination 3.png" alt=""></div>
       <div class="content">
@@ -171,7 +197,7 @@
   </div>
 
 
-  <div class="col center px-2 px-lg-3">
+  <div class="col-md col-12 center px-2 px-lg-3" data-depth="0.5">
     <div class="destination">
       <div class="imgcontainer"><img src="./Assets/destination 2.jpg" alt=""></div>
       <div class="content">
@@ -183,8 +209,9 @@
   
 
 
-   <div class="col center px-2 px-lg-3">
+   <div class="col-md col-12 center px-2 px-lg-3" data-depth="0.8">
     <div class="destination">
+      <img src="./Assets/Decore (1).png" class="destinationdecore" alt="">
       <div class="imgcontainer"><img src="./Assets/destination 1.png" alt=""></div>
       <div class="content">
         <div class="d-flex justify-content-between text-muted "><p>Rome, italy</p><p>$5,42k</p></div>
@@ -205,11 +232,11 @@
   
   
 
-      <div class="container gap-4 px-5">
+      <div class="container gap-4 px-xl-5 px-2">
  
 
-        <div class="row px-2">
-          <div class="col-12 col-lg-6">
+        <div class="row px-2 scene" >
+          <div class="col-12 col-lg-6" data-depth="1">
             <div class="d-flex flex-column gap-4">
         <div >
 <p class="text-muted fw-bold fs-5 text-center text-lg-start">Easy and Fast</p>
@@ -246,10 +273,10 @@
                 </div>
         </div>
 </div>
-          <div class="col-6 position-relative d-none d-lg-block">
+          <div class="col-6 position-relative d-none d-lg-block" data-depth="1.5">
             <img src="./Assets//Group 589 (1).png" class="blueblurdecore d-none d-lg-block" alt="">
-            <div class="center w-100 h-100 z-1">
-              <div class="triptogreececontainer">
+            <div class=" w-100 h-100 z-1 scene" >
+              <div class="triptogreececontainer scene" data-depth="2">
                 <img src="./Assets/Rectangle 17.jpg" alt="">
                 <div class="d-flex flex-column mt-3">
                 <p class="fs-5 fw-normal mb-1">Trip To Greece</p>
@@ -264,7 +291,9 @@
                    <p class="m-0 text-muted">24 people going</p>
                   </div>
 </div>
-<img src="./Assets//Group 4.png" class="smalltriptorome" alt="">
+<div class="smalltriptorome scene">
+<img src="./Assets//Group 4.png"  alt="" data-depth="4">
+</div>
                 </div>
             </div>
           </div>
@@ -282,7 +311,7 @@
 
 
 
-<section class="testimonials padding200">
+<section class="testimonials padding100">
 
       <div class="container gap-4 px-3 px-lg-5">
  
@@ -304,30 +333,30 @@
 
 
   <div class="slide "><img src="./Assets/Image.png" alt="">
-  <p class="fs-5">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-<p class="fs-5 w-100 m-0 fw-bold">Michael Carter</p>
-<p class="fs-5 w-100 m-0">Bangkok, Thailand</p>
+  <p class="">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+<p class=" w-100 m-0 fw-bold">Michael Carter</p>
+<p class=" w-100 m-0">Bangkok, Thailand</p>
 
 
 </div>
    <div class="slide "><img src="./Assets/Image.png" alt="">
-  <p class="fs-5">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-<p class="fs-5 w-100 m-0 fw-bold">David Thompson</p>
-<p class="fs-5 w-100 m-0">Cairo, Egypt</p>
+  <p class="">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+<p class=" w-100 m-0 fw-bold">David Thompson</p>
+<p class=" w-100 m-0">Cairo, Egypt</p>
 
 
 </div>
    <div class="slide "><img src="./Assets/Image.png" alt="">
-  <p class="fs-5">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-<p class="fs-5 w-100 m-0 fw-bold">Daniel Roberts</p>
-<p class="fs-5 w-100 m-0">Lahore, Pakistan</p>
+  <p class="">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+<p class=" w-100 m-0 fw-bold">Daniel Roberts</p>
+<p class=" w-100 m-0">Lahore, Pakistan</p>
 
 
 </div>
     <div class="slide "><img src="./Assets/Image.png" alt="">
-  <p class="fs-5">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
-<p class="fs-5 w-100 m-0 fw-bold">William Harris</p>
-<p class="fs-5 w-100 m-0">Lisbon, Portugal</p>
+  <p class="">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+<p class=" w-100 m-0 fw-bold">William Harris</p>
+<p class=" w-100 m-0">Lisbon, Portugal</p>
 
 
 </div>
@@ -397,17 +426,17 @@
     <footer class="padding200">
       <img src="./Assets/Decore (3).png" alt="" class="decorefooter">
       <div class="container">
-        <div class="row gap-5 px-5">
+        <div class="row gap-5 px-md-5 p-1">
 
 
-          <div class="col-3">
+          <div class="col-md col-5 3">
             <div class="d-flex flex-column gap-4"><h1 style="  font-family: 'Poppins', sans-serif;">Jadoo.</h1>
             <p>Book your trip in minute, get full Control for much longer.</p>
           </div>
           </div>
 
 
-          <div class="col p-0">
+          <div class="col-md col-5 p-0">
             <div class="d-flex flex-column gap-4">
             <h4 class="fw-bold">Company</h4>
             <div class="d-flex flex-column gap-2 fs-5">
@@ -419,7 +448,7 @@
           </div>
 
 
-          <div class="col p-0">
+          <div class="col-md col-5 p-0">
                 <div class="d-flex flex-column gap-4">
             <h3 class="fw-bold">Contact</h3>
             <div class="d-flex flex-column gap-2 fs-5">
@@ -429,7 +458,7 @@
             </div>
             </div>
           </div>
-          <div class="col p-0">
+          <div class="col-md col-5 p-0">
                 <div class="d-flex flex-column gap-4">
             <h3 class="fw-bold">More</h3>
             <div class="d-flex flex-column gap-2 fs-5">
@@ -439,7 +468,7 @@
             </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col p-0">
             <div class="d-flex flex-column gap-3">
 <div ><img src="./Assets/Social (1).png" alt=""> <img src="./Assets/Social.png" alt="">  <img src="./Assets/Social (2).png" alt=""></div>
 <p class="fs-5">Discover our app</p>
@@ -451,7 +480,8 @@
       </div>
     </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script> -->
+  <script src="./parallax.js"></script>
   <script src="./home.js"></script>
 
 </body>
