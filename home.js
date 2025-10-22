@@ -43,10 +43,6 @@ document.querySelectorAll(".animation").forEach(animation => {
   })
 
 document.querySelector("span").classList.add("showspan")
-
-
-
-  // Typing function
   function type(i, full, component) {
     if (i < full.length) {
       component.textContent += full.charAt(i);
@@ -66,8 +62,6 @@ function initParallaxScenes() {
     new Parallax(scene);
   });
 }
-
-// ✅ Run it
 initParallaxScenes();
 
 const phonemenu = document.getElementById("phonemenu");
@@ -100,11 +94,45 @@ window.addEventListener('scroll',()=> {
   const scroll = window.scrollY
   if(scroll > 1) {
 document.querySelector("header").classList.add("headerfixed")
-console.log("scrolled")
   }
   else if (scroll == 0){
     document.querySelector("header").classList.remove("headerfixed")
-    console.log("not scrolled")
 
   }
 })
+
+const sections = document.querySelectorAll(".section");
+const intersectanimations = document.querySelectorAll(".intersect")
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log("Active section:", entry.target.id);
+    }
+  });
+}, {
+  threshold: 0.5,
+});
+
+
+const intersectedcomponents = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+   [...entry.target.children].forEach(child => {
+        child.classList.add("show");
+      });
+    }
+  });
+}, {
+  threshold: 0.1, 
+});
+
+
+
+sections.forEach(section => observer.observe(section));
+intersectanimations.forEach(component => intersectedcomponents.observe(component));
+
+document.getElementById("dropdowncontainer").addEventListener("click", () => {
+  document.getElementById("dropdown").classList.toggle("show");
+});

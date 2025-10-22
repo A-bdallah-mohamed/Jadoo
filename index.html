@@ -24,9 +24,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="center flex-column" id="mainsection">
+<body class="center flex-column section" id="mainsection">
   
-<div class="phonemenu d-block d-lg-none position-relative" id="phonemenu">
+<div class="phonemenu d-block d-lg-none" id="phonemenu">
      <ul >
             <li><a href="#flightsection">Flihgts</a></li>
             <li><a href="#destinationssection">Desitnations</a></li>
@@ -34,7 +34,14 @@
             <li><a href="#hotelssection">Hotels</a></li>
             <li>Login</li>
             <li class="">Sign up</li>
-            <li class="d-flex gap-2"><p class="m-0">EN</p><i class="bi bi-chevron-down"></i></li>
+            <li class="d-flex gap-2 dropdowncontainer">
+              <div class="dropdown">
+                <ul>
+                  <li>English</li>
+                  <li>Arabic</li>
+                </ul>
+              </div>
+              <p class="m-0">EN</p><i class="bi bi-chevron-down"></i></li>
           </ul>
 </div>
 
@@ -53,8 +60,15 @@
             <li><a href="#hotelssection">Hotels</a></li>
             <li>Login</li>
             <li class="borderedlistitem">Sign up</li>
-            <li class="d-flex gap-2"><p class="m-0">EN</p><i class="bi bi-chevron-down"></i></li>
-          </ul>
+      <li class="d-flex gap-2 dropdowncontainer" id="dropdowncontainer">
+              <div class="dropdown " id="dropdown">
+                <ul>
+                  <li>English</li>
+                  <li>Arabic</li>
+                </ul>
+              </div>
+              <p class="m-0">EN</p><i class="bi bi-chevron-down"></i></li>     
+                 </ul>
 <i class="bi bi-list d-block d-lg-none fs-1" id="togglephonemenu"></i>
 </div>
         </header>
@@ -65,7 +79,7 @@
   <div>
 
 
-    <section class="mainsection scene" >
+    <section class="mainsection scene section" id="mainsection">
 
       <div class="container px-4">
 
@@ -85,8 +99,8 @@
               <p class="paragraph animation" id="paragraph">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen
                 it engrossed listening. Park gate sell they west hard for the.</p>
                 </div>
-              <div class="buttonscontainer d-flex gap-lg-5 gap-3 fw-bold scene" data-depth="1.5">
-                <div data-depth="0.9">
+              <div class="buttonscontainer d-flex gap-lg-5 gap-3 fw-bold scene" data-depth="0.8">
+                <div data-depth="0.7">
                 <button id="button1" class="animation" >Find out more</button>
                 </div>
 <div data-depth="0.6">
@@ -122,17 +136,17 @@
 
     </section>
 
-    <section class="categoriessections padding100" id="flightsection">
+    <section class="categoriessections padding200 section" id="flightsection">
 
-      <div class="container center flex-column gap-4 scene" >
-        <div data-depth="1">
+      <div class="container center flex-column gap-4 intersect" >
+        <div class="caegorytitle1">
         <p class="fw-bold m-0 text-muted" style='font-weight: "Poppins","sans";' >CATEGORY</p>
         </div>
-        <div data-depth="0.5">
+        <div class="caegorytitle2">
         <h1 class="fw-bold heading" >We Offer Best Services</h1>
         </div>
-        <div class="row w-100 center px-4 gap-md-2 gap-5 scene" data-depth="0.2">
-          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1.5">
+        <div class="row w-100 center px-4 gap-md-2 gap-5 intersect">
+          <div class="col-lg col-md-4 col-12 categorycontainer category1 ">
 
 
 <div class="category gap-3">
@@ -143,7 +157,7 @@
 
 
           </div>
-          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1">
+          <div class="col-lg col-md-4 col-12 categorycontainer category2">
 
 
             
@@ -156,7 +170,7 @@
 
 
           </div>
-          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1">
+          <div class="col-lg col-md-4 col-12 categorycontainer category3">
 
 
             
@@ -169,7 +183,7 @@
 
 
           </div>
-          <div class="col-lg col-md-4 col-12 categorycontainer" data-depth="1.5">
+          <div class="col-lg col-md-4 col-12 categorycontainer category4">
 
 
             
@@ -188,20 +202,20 @@
 
 
 
-    <section class="topdestinations padding100" id="destinationssection">
+    <section class="topdestinations padding100 section" id="destinationssection">
 
 
-      <div class="container center flex-column gap-4 px-5 scene" >
-        <div data-depth="0.8">
+      <div class="container center flex-column gap-4 px-5 intersect" >
+        <div class="caegorytitle1">
         <p class="fw-bold m-0 text-muted" style='font-weight: "Poppins","sans";' >Top Selling</p>
         </div>
-        <div data-depth="0.5">
+        <div class="caegorytitle1">
         <h1 class="fw-bold heading" >Top Destinations</h1>
         </div>
-<div class="row w-100 pt-5 center gap-md-2 gap-5 scene" data-depth="0.5" >
+<div class="row w-100 pt-5 center gap-md-2 gap-5 intersect">
 
   
-  <div class="col-md col-12 center px-2 px-lg-3" data-depth="0.8">
+  <div class="col-md col-12 center px-2 px-lg-3 destination1">
     <div class="destination">
       <div class="imgcontainer"><img src="./Assets/destination 3.png" alt=""></div>
       <div class="content">
@@ -212,7 +226,7 @@
   </div>
 
 
-  <div class="col-md col-12 center px-2 px-lg-3" data-depth="0.5">
+  <div class="col-md col-12 center px-2 px-lg-3 destination2" >
     <div class="destination">
       <div class="imgcontainer"><img src="./Assets/destination 2.jpg" alt=""></div>
       <div class="content">
@@ -224,7 +238,7 @@
   
 
 
-   <div class="col-md col-12 center px-2 px-lg-3" data-depth="0.8">
+   <div class="col-md col-12 center px-2 px-lg-3 destination3" >
     <div class="destination">
       <img src="./Assets/Decore (1).png" class="destinationdecore" alt="">
       <div class="imgcontainer"><img src="./Assets/destination 1.png" alt=""></div>
@@ -243,23 +257,23 @@
 
     </section>
 
-<section class="booknexttrip center padding100" id="bookingsection">
+<section class="booknexttrip center padding100 section" id="bookingsection">
   
   
 
       <div class="container gap-4 px-xl-5 px-2">
  
 
-        <div class="row px-2 scene" >
-          <div class="col-12 col-lg-6" data-depth="1">
+        <div class="row px-2" >
+          <div class="col-12 col-lg-6" >
             <div class="d-flex flex-column gap-4">
-        <div >
-<p class="text-muted fw-bold fs-5 text-center text-lg-start">Easy and Fast</p>
-<h1 class="heading fw-bold">Book Your Next Trip<br />In 3 Easy Steps</h1>
+        <div class="intersect">
+<p class="text-muted fw-bold fs-5 text-center text-lg-start category1">Easy and Fast</p>
+<h1 class="heading fw-bold category1">Book Your Next Trip<br />In 3 Easy Steps</h1>
         </div>
-        <div class="row gap-4">
-          <div class="col-12 col-lg-10">
-            <div class="value">
+        <div class="row gap-4 intersect">
+          <div class="col-12 col-lg-10 value1">
+            <div class="value ">
               <div class="iconcontainer"><img src="./Assets//Group 7.png" alt=""></div>
               <div class="content">
                 <p class="text-muted fw-bold fs-5">Choose Destination</p>
@@ -267,7 +281,7 @@
               </div>
             </div>
           </div>
-      <div class="col-12 col-lg-10">
+      <div class="col-12 col-lg-10 value2">
             <div class="value">
               <div class="iconcontainer"><img src="./Assets//Group 12.png" alt=""></div>
               <div class="content">
@@ -276,7 +290,7 @@
               </div>
             </div>
           </div>
-      <div class="col-12 col-lg-10">
+      <div class="col-12 col-lg-10 value3">
             <div class="value">
               <div class="iconcontainer"><img src="./Assets//Group 11.png" alt=""></div>
               <div class="content">
@@ -288,10 +302,10 @@
                 </div>
         </div>
 </div>
-          <div class="col-6 position-relative d-none d-lg-block" data-depth="1.5">
+          <div class="col-6 position-relative d-none d-lg-block" >
             <img src="./Assets//Group 589 (1).png" class="blueblurdecore d-none d-lg-block" alt="">
-            <div class=" w-100 h-100 z-1 scene" >
-              <div class="triptogreececontainer scene" data-depth="2">
+            <div class=" w-100 h-100 z-1 intersect" >
+              <div class="triptogreececontainer intersect">
                 <img src="./Assets/Rectangle 17.jpg" alt="">
                 <div class="d-flex flex-column mt-3">
                 <p class="fs-5 fw-normal mb-1">Trip To Greece</p>
@@ -306,8 +320,8 @@
                    <p class="m-0 text-muted">24 people going</p>
                   </div>
 </div>
-<div class="smalltriptorome scene">
-<img src="./Assets//Group 4.png"  alt="" data-depth="4">
+<div class="smalltriptorome intersect">
+<img src="./Assets//Group 4.png"  alt="">
 </div>
                 </div>
             </div>
@@ -326,13 +340,13 @@
 
 
 
-<section class="testimonials padding100">
+<section class="testimonials padding100 section">
 
       <div class="container gap-4 px-3 px-lg-5">
  
 
-        <div class="row ps-4 pe-lg-4">
-          <div class="col-12 col-lg-6">
+        <div class="row ps-4 pe-lg-4 intersect">
+          <div class="col-12 col-lg-6 category1">
             <div class="d-flex flex-column gap-4">
         <div >
 <p class="text-muted fw-bold fs-5 text-center text-lg-start">TESTIMONIALS</p>
@@ -343,7 +357,7 @@
  
         </div>
 </div>
-          <div class="col-lg-6 col-12 position-relative d-flex align-items-center  justify-content-between gap-5">
+          <div class="col-lg-6 col-12 position-relative d-flex align-items-center  justify-content-between gap-5 caegorytitle2">
 <div id="container">
 
 
@@ -378,7 +392,7 @@
 
   
 </div>
-<div class="buttonscontainer">
+<div class="buttonscontainer intersect">
 <button id="prevbtn" class="buttons"><i class="bi bi-chevron-up"></i></button>
 <button id="nextBtn" class="buttons"><i class="bi bi-chevron-down"></i></button>
 </div>
@@ -393,17 +407,17 @@
 </section>
 
 
-<section class="padding200" id="hotelssection">
+<section class="padding200 section" id="hotelssection">
   
   
       <div class="container gap-4 px-5 ">
  
-<div class="row center">
-  <div class="col center company"><img src="./Assets/image 27.png" alt=""></div>
-  <div class="col center company"><img src="./Assets//image 28.png" alt=""></div>
-  <div class="col center company"><img src="./Assets/image 29.png" alt=""></div>
-  <div class="col center company"><img src="./Assets/image 30.png" alt=""></div>
-  <div class="col center company"><img src="./Assets/image 31.png" alt=""></div>
+<div class="row center intersect">
+  <div class="col center company company1"><img src="./Assets/image 27.png" alt=""></div>
+  <div class="col center company company2"><img src="./Assets//image 28.png" alt=""></div>
+  <div class="col center company company3"><img src="./Assets/image 29.png" alt=""></div>
+  <div class="col center company company4"><img src="./Assets/image 30.png" alt=""></div>
+  <div class="col center company company5"><img src="./Assets/image 31.png" alt=""></div>
 </div>
 
 
@@ -414,7 +428,7 @@
 
 
 
-<section class="email padding200">
+<section class="email padding200 section">
   
       <div class="container gap-4 px-md-5 px-4 position-relative">
 <img src="./Assets/Group 5.png" alt="" class="subscribedecore d-none d-lg-block">
