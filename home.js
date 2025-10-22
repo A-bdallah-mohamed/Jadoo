@@ -38,15 +38,10 @@ prevBtn.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   // Add "show" classes
-  document.getElementById("traveller").classList.add("show");
-  document.getElementById("plane1").classList.add("show");
-  document.getElementById("plane2").classList.add("show");
-  document.querySelector("header").classList.add("show");
-document.getElementById("smallheading").classList.add("show")
-document.getElementById("mainheading").classList.add("show")
-document.getElementById("paragraph").classList.add("show")
-document.getElementById("button1").classList.add("show")
-document.getElementById("button2").classList.add("show")
+document.querySelectorAll(".animation").forEach(animation => {
+    animation.classList.add("show")
+  })
+
 document.querySelector("span").classList.add("showspan")
 
 
@@ -59,9 +54,6 @@ document.querySelector("span").classList.add("showspan")
       setTimeout(() => type(i, full, component), 30); // pass args again
     }
   }
-
-
-
 
 
 });
@@ -78,5 +70,41 @@ function initParallaxScenes() {
 // ✅ Run it
 initParallaxScenes();
 
+const phonemenu = document.getElementById("phonemenu");
+const togglebutton = document.getElementById("togglephonemenu");
 
+togglebutton.addEventListener("click", () => {
+  phonemenu.classList.toggle("phonemenushow");
+  document.documentElement.style.overflowY = phonemenu.classList.contains("phonemenushow") ? "hidden" : "auto";
+});
 
+window.addEventListener("click", (e) => {
+  if (
+    phonemenu.classList.contains("phonemenushow") &&
+    !phonemenu.contains(e.target) &&
+    !togglebutton.contains(e.target)
+  ) {
+    phonemenu.classList.remove("phonemenushow");
+    document.documentElement.style.overflowY = "auto"; 
+  }
+});
+
+document.querySelectorAll("a").forEach(a=>{
+  a.addEventListener('click', e => {
+        phonemenu.classList.remove("phonemenushow");
+      document.documentElement.style.overflowY = "auto";
+  })
+})
+
+window.addEventListener('scroll',()=> {
+  const scroll = window.scrollY
+  if(scroll > 1) {
+document.querySelector("header").classList.add("headerfixed")
+console.log("scrolled")
+  }
+  else if (scroll == 0){
+    document.querySelector("header").classList.remove("headerfixed")
+    console.log("not scrolled")
+
+  }
+})

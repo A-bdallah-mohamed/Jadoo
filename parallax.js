@@ -265,10 +265,6 @@ class Parallax {
       this.element.style.position = 'relative'
     }
 
-    // Pointer events
-    if(!this.pointerEvents) {
-      this.element.style.pointerEvents = 'none'
-    }
 
     // Setup
     this.updateLayers()
@@ -283,6 +279,7 @@ class Parallax {
     }
   }
 
+  
   updateLayers() {
     if(this.selector) {
       this.layers = this.element.querySelectorAll(this.selector)
